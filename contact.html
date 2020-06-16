@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpdateInfo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body id="UpdateInfo">
+  <div class="container">
+     <header class="header">
+
+        <a class="link-title" href="/">Med Hub</a>
+
+    </header>
+    <nav class="menu">
+
+          <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+          <a href="about.html">About Us</a> &nbsp; &nbsp; &nbsp;
+        <a href="addPatient.html">Add Patient</a>&nbsp; &nbsp; &nbsp;
+          <a href="searchindex.php">Search Patient</a>&nbsp; &nbsp; &nbsp;
+          <a href="mapapi.html">Locate Us</a>&nbsp; &nbsp; &nbsp;
+
+
+      </nav>
+
+    <article class="main">
+
+       <h1 class="page-heading">Pateint Info</h1>
+
+       <div id="form">
+
+          <form method="post" action="process.php">
+
+            <p>
+
+            <label for="Nid"> NID:</label>
+             <input type ="text" name="Nid" placeholder="NID" >
+            </p>
+
+
+
+
+
+             <p><label for="FirstName"> First Name:</label>
+             <input type="text" name="FirstName" placeholder="Patient's First Name" required>
+            </p>
+
+            <p><label for="LastName"> Last Name:</label>
+             <input type="text" name="LastName" placeholder="Patient's Last Name" required>
+            </p>
+
+             <p><label for="Sex"> Sex:</label>
+             <input type="text" name="Sex" placeholder="" required>
+            </p>
+
+             <p><label for="Occupation"> Occupation:</label>
+             <input type="text" name="Occupation" placeholder="yy/mm/dd">
+            </p>
+
+             <p><label for="DOB"> Date Of Birth :</label>
+             <input type="text" name="DOB" placeholder="" required>
+            </p>
+
+            <p><label for="Age"> Age:</label>
+             <input type="text" name="Age" placeholder="">
+            </p>
+
+
+
+
+
+            <label for="PatientCon"> Patient Condition:</label>
+             <input type="text" name="PatientCon" placeholder="" required>
+            </p>
+
+                 <input id="submit" type="submit" >
+
+
+
+                    </form>
+
+
+
+
+
+
+       </div>
+
+
+
+
+
+
+
+
+
+
+    </article>
+
+
+          <footer>
+
+            &copy; Med Hub &nbsp;<span class="separator">|</span></a>
+
+
+        </footer>
+
+
+
+
+
+    </div>
+</body>
+</html>

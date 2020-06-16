@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locate us</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="utf-8">
+    <style>
+
+      #map {
+        height: 50%;
+      }
+
+      html, body {
+        height: 100%;
+        width: auto;
+        margin: 10;
+        padding: 40;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="menu">
+
+          <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+          <a href="about.html">About Us</a> &nbsp; &nbsp; &nbsp;
+        <a href="addPatient.html">Add Patient</a>&nbsp; &nbsp; &nbsp;
+          <a href="searchindex.php">Search Patient</a>&nbsp; &nbsp; &nbsp;
+          <a href="mapapi.html">Locate Us</a>&nbsp; &nbsp; &nbsp;
+
+
+      </nav>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1wUdpHibPEoxPxApkkNG8mjMsz02evjo&callback=initMap"
+    async defer></script>
+  </body>
+</html>
